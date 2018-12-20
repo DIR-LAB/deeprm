@@ -1,12 +1,24 @@
+
 # DeepRM
 HotNets'16 http://people.csail.mit.edu/hongzi/content/publications/DeepRM-HotNets16.pdf
+
+
+If using conda environment
+Create a new Python 2.7 environment
+
+'''
+conda create -n py27_drhpc python=2.7 anaconda
+conda activate py27_drhpc
+pip install --upgrade pip #if pip version is very old
+pip install argparse PyHamcrest
+'''
 
 Install prerequisites
 
 ```
 sudo apt-get update
 sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
-pip install --user Theano
+pip install --user Theano==0.7 
 pip install --user Lasagne==0.1
 sudo apt-get install python-matplotlib
 ```
